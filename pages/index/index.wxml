@@ -6,4 +6,9 @@
       <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
     </navigator>
   </view>
+  <swiper>
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+  </swiper>
 </view>
