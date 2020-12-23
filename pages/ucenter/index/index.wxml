@@ -1,0 +1,22 @@
+<view class="profile-info">
+  <image bindtap="onUserInfoClick" class="avatar"
+    src="{{userInfo.avatar || 'http://yanxuan.nosdn.127.net/8945ae63d940cc42406c3f67019c5cb6.png'}}"></image>
+  <view class="info">
+    <text class='name' bindtap='onUserInfoClick'>{{ userInfo.nickname || '点击登录' }}</text>
+  </view>
+  <image bindtap="onUserInfoClick" class='btn' src='/static/images/address_right.png'></image>
+</view>
+
+<!-- <login-dialog></login-dialog> -->
+
+<button bindtap="siginoutLogin">退出登录</button>
+
+<view class='dialog-login' wx:if="{{showLoginDialog}}" bindtap='onCloseLoginDialog'>
+  <view class='dialog-body'>
+    <view class='title'>请选择登录方式</view>
+    <view class='content'>
+      <button type="primary" open-type="getUserInfo" bindgetuserinfo="onWechatLogin">微信登录</button>
+      <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onWechatLogin">手机号登录</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--components/login-dialog/index.wxml-->
+<view class="mask">
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo='handeluserinfo'>获取用户信息</button>
+</view>

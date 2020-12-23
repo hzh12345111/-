@@ -1,0 +1,6 @@
+<!--pages/topic/topic.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    
+  </scroll-view>
+</view>
